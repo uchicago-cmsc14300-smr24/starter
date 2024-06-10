@@ -1,0 +1,92 @@
+HOMEWORK 0 WRITTEN
+=======================
+
+Question 1
+
+What is the error that you get for the following situations, and does the error
+make sense to you? Please restore the program if you change it in any way.
+
+a. when you use an undeclared variable; e.g. remove line 57 in encrypt.c.
+
+     ...YOUR ANSWER HERE...
+
+b. when you use an undeclared function; e.g. remove the declaration on line 41.
+
+     ...YOUR ANSWER HERE...
+
+c. when you use a declared but undefined function; e.g. remove the definition of
+   is_upper_letter on lines 80-83.
+
+     ...YOUR ANSWER HERE...
+
+d. when you forgot to #include a library; e.g. remove either line 11 or line 12.
+
+     ...YOUR ANSWER HERE...
+
+--------------------------------------------------------------------------------
+
+Question 2
+
+In the assignment specification, we know that passing `-o <name>` to clang
+will instruct it to produce an executable called `<name>`. However, when you
+don't include the `-o <name>` flag, clang will choose a default name for the
+produced executable. What is that default name?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 3
+
+There are three secret messages in secrets directory that are encrypted with
+difference keys. Use your frequency analysis to figure out the keys and decrypt
+the messages.
+
+a. What is secret0.txt? What is the key? Don't include the entire text, just
+tell me what it is.
+
+     ...YOUR ANSWER HERE...
+
+a. What is secret1.txt? What is the key? Don't include the entire text, just
+tell me what it is.
+
+     ...YOUR ANSWER HERE...
+
+a. What is secret2.txt? What is the key? Don't include the entire text, just
+tell me what it is.
+
+     ...YOUR ANSWER HERE...
+
+Please restore the keys of encryption and decryption to 15.
+
+
+--------------------------------------------------------------------------------
+
+Question 4
+
+Describe your coding set up. What editor do you use? How do you compile, run,
+and test your code? How many windows/tabs do you use? etc.
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 5
+
+How many hours did you spend for this assignment?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 6
+
+Document your collaboration here.
+
+     ...YOUR ANSWER HERE...
+
+
+------------------------------------The End-------------------------------------
