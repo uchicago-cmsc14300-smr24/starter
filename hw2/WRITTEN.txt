@@ -1,0 +1,51 @@
+HOMEWORK 2 WRITTEN
+=======================
+
+Question 1
+
+What is the compression rate of this binary format for large.txt? I.e. What is
+(file size of large.bin) / (file size of large.txt)?
+Hint: You may use `du <file>` on the terminal to find the size of a file in
+bytes.
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 2
+
+What are the pros and cons of storing information in a binary format compared to
+plain text?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 3
+
+How many hours did you spend for this assignment?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 4
+
+What is the most difficult aspect of this assignment, if any? Other feedback?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 5
+
+Document your collaboration here.
+
+     ...YOUR ANSWER HERE...
+
+
+------------------------------------The End-------------------------------------
