@@ -189,7 +189,7 @@ bool read_student(FILE *file, struct student *student_p)
 
     /* allocate a buffer to read major names */
     char major_name_buf[64] = { 0 };
-    struct student s;
+    struct student s = { 0 };
 
     /* fscanf is the opposite of fprintf. It ``scans'' the file according to
      * a particular format, and returns how many of the fields are scanned
