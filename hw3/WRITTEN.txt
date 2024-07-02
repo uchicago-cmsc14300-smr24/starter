@@ -1,0 +1,41 @@
+HOMEWORK 3 WRITTEN
+=======================
+
+Question 1
+
+Both readline and concat takes an argument of type char **, but conceptually
+the double pointer has slightly different meanings. Can you articulate the
+difference in what the double pointer represent in each case?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 2
+
+How many hours did you spend for this assignment?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 3
+
+What is the most difficult aspect of this assignment, if any?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 4
+
+Document your collaboration here.
+
+     ...YOUR ANSWER HERE...
+
+
+------------------------------------The End-------------------------------------
+
