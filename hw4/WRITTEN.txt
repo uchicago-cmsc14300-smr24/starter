@@ -1,0 +1,79 @@
+HOMEWORK 4 WRITTEN
+=======================
+
+Question 1
+
+Comparing array lists and linked lists, for each of the following list
+operations, which one typically runs faster? Answer one of array lists,
+linked lists, or roughly the same.
+
+(a) append
+     ...YOUR ANSWER HERE...
+
+(b) prepend
+     ...YOUR ANSWER HERE...
+
+(c) len
+     ...YOUR ANSWER HERE...
+
+(d) insert_at
+     ...YOUR ANSWER HERE...
+
+(e) remove_at
+     ...YOUR ANSWER HERE...
+
+(f) is_empty?
+     ...YOUR ANSWER HERE...
+
+(g) get i-th element
+     ...YOUR ANSWER HERE...
+
+--------------------------------------------------------------------------------
+
+Question 2
+
+Comparing array lists and linked lists, which one would be more appropriate for
+each of the following usage? Why?
+
+(a) A browser's back and forward buttons. Frequent addition and removal of URLs
+would occur at both ends.
+     ...YOUR ANSWER HERE...
+
+(b) Spotify (or similar online music streaming services) Playlist, where random
+access is needed to play any song in the playlist and needs to be able to
+play on shuffle.
+     ...YOUR ANSWER HERE...
+
+(c) A text editor where characters are frequently inserted or removed in the
+middle of the text.
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 3
+
+How many hours did you spend for this assignment?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 4
+
+What is the most difficult aspect of this assignment, if any?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 5
+
+Document your collaboration here.
+
+     ...YOUR ANSWER HERE...
+
+
+------------------------------------The End-------------------------------------
