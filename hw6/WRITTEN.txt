@@ -1,0 +1,67 @@
+HOMEWORK 4 WRITTEN
+=======================
+
+Question 1
+
+If the hash table is provided with the following (terrible) hash function,
+     hash(k) = 1,
+what data structure does the hash table become?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 2
+
+Compare the running time of `groups` using a hash table and a binary search
+tree, how long does it take to group the largest input in each case?
+Try: `/usr/bin/time ./groups -t tests/large.txt > /dev/null`
+     `/usr/bin/time ./groups -m tests/large.txt > /dev/null`
+
+There are primarily two parts in the `groups` program:
+     1. insert all lines into the dictionary, and
+     2. visit all key-value pairs in sorted order.
+Which implementation is better at accomplishing Step 1? Which implementation is
+better at Step 2?
+
+
+     ...YOUR ANSWER HERE...
+
+--------------------------------------------------------------------------------
+
+Question 3
+
+This is the last assignment for this class. Any feedback on the class?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 4
+
+How many hours did you spend for this assignment?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 5
+
+What is the most difficult aspect of this assignment, if any?
+
+     ...YOUR ANSWER HERE...
+
+
+--------------------------------------------------------------------------------
+
+Question 6
+
+Document your collaboration here.
+
+     ...YOUR ANSWER HERE...
+
+
+------------------------------------The End-------------------------------------
