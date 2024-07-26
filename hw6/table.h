@@ -81,16 +81,4 @@ void table_walk(struct table *t,
                   void (*visit)(void *key, void *value, void *data),
                   void *data);
 
-/* table_walk_unordered: applies the visit function to each key-value pair in
- * no particular order.
- *
- * t: pointer to the table
- * visit: a function pointer that takes a key, value and data and performs some
- *        operation
- * data: pointer to additional data that visit might need, data will be passed
- *       back to `visit`
- */
-void table_walk_unordered(struct table *t,
-                void (*visit)(void *key, void *value, void *data), void *data);
-
 #endif

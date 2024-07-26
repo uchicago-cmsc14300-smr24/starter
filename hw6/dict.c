@@ -80,14 +80,3 @@ void dict_walk(struct dict *dict,
         map_walk(dict->data.map, visit, data);
     }
 }
-
-void dict_walk_unordered(struct dict *dict,
-        void (*visit)(void *key, void *value, void *data),
-        void *data)
-{
-    if (dict->type == TABLE) {
-        table_walk_unordered(dict->data.tbl, visit, data);
-    } else {
-        map_walk(dict->data.map, visit, data);
-    }
-}

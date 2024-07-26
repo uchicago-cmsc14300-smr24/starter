@@ -162,19 +162,6 @@ void table_walk(struct table *t,
     free(keys);
 }
 
-void table_walk_unordered(struct table *t,
-        void (*visit)(void *key, void *value, void *data),
-        void *data)
-{
-    assert(t != NULL && visit != NULL);
-
-    for (int i = 0; i < t->size; i++) {
-        for (struct bucket *b = t->buckets[i]; b != NULL; b = b->next) {
-            visit(b->key, b->value, data);
-        }
-    }
-}
-
 /******************************************************************************/
 /*                        Implementation of quick sort                        */
 /******************************************************************************/
