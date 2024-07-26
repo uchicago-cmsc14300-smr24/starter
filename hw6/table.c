@@ -123,24 +123,24 @@ void table_print(struct table *t, FILE *fp)
     table_walk(t, print_kv, fp);
 }
 
-static void quick_sort(void **arr, int len, int (*cmp)(void *, void *));
+static void quick_sort(struct bucket**arr, int len, int (*cmp)(void *, void *));
 
-static void **sorted_keys(struct table *t)
+static struct bucket **sorted_buckets(struct table *t)
 {
     int length = table_length(t);
 
-    void **keys = malloc(length * sizeof(void *));
+    struct bucket **buckets = malloc(length * sizeof(struct bucket *));
     int len = 0;
     for (int i = 0; i < t->size; i++) {
         for (struct bucket *b = t->buckets[i]; b != NULL; b = b->next) {
-            keys[len++] = b->key;
+            buckets[len++] = b;
         }
     }
 
     assert(length == len);
-    quick_sort(keys, len, t->cmp);
+    quick_sort(buckets, len, t->cmp);
 
-    return keys;
+    return buckets;
 }
 
 void table_walk(struct table *t,
@@ -149,37 +149,36 @@ void table_walk(struct table *t,
 {
     assert(t != NULL && visit != NULL);
 
-    void **keys = sorted_keys(t);
+    struct bucket **buckets = sorted_buckets(t);
     int length = table_length(t);
 
     for (int i = 0; i < length; i++) {
-        void *key = keys[i];
-        void *value = table_get(t, key);
-
-        visit(key, value, data);
+        struct bucket *b = buckets[i];
+        visit(b->key, b->value, data);
     }
 
-    free(keys);
+    free(buckets);
 }
 
 /******************************************************************************/
 /*                        Implementation of quick sort                        */
 /******************************************************************************/
 
-static inline void swap(void **arr, int i, int j)
+static inline void swap(struct bucket **arr, int i, int j)
 {
-    void *tmp = arr[i];
+    struct bucket *tmp = arr[i];
     arr[i] = arr[j];
     arr[j] = tmp;
 }
 
-static int partition(void **arr, int start, int end, int (*cmp)(void *, void *))
+static int partition(struct bucket **arr, int start, int end,
+                     int (*cmp)(void *, void *))
 {
-    void *pivot = arr[start];
+    struct bucket *pivot = arr[start];
     int next = end - 1;
 
     for (int i = end - 1; i > start; i--) {
-        if (cmp(arr[i], pivot) > 0) {
+        if (cmp(arr[i]->key, pivot->key) > 0) {
             swap(arr, next--, i);
         }
     }
@@ -188,7 +187,7 @@ static int partition(void **arr, int start, int end, int (*cmp)(void *, void *))
     return next;
 }
 
-static void quick_sort_impl(void **arr, int start, int end,
+static void quick_sort_impl(struct bucket **arr, int start, int end,
         int (*cmp)(void *, void *))
 {
     if (end - start <= 1) {
@@ -201,7 +200,7 @@ static void quick_sort_impl(void **arr, int start, int end,
     quick_sort_impl(arr, p + 1, end, cmp);
 }
 
-static void quick_sort(void **arr, int len, int (*cmp)(void *, void *))
+static void quick_sort(struct bucket **arr, int len, int (*cmp)(void *, void *))
 {
     quick_sort_impl(arr, 0, len, cmp);
 }
