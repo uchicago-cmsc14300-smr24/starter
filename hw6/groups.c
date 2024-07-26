@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
     fclose(file);
 
     dict_walk(dict, print_group, NULL);
-    dict_walk(dict, free_group, NULL);
+    dict_walk_unordered(dict, free_group, NULL);
 
     dict_free(dict);
     return EXIT_SUCCESS;

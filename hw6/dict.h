@@ -34,4 +34,8 @@ void dict_walk(struct dict *dict,
         void (*visit)(void *key, void *value, void *data),
         void *data);
 
+/* Applies the visit function to each key-value pairs in no guaranteed order */
+void dict_walk_unordered(struct dict *dict,
+        void (*visit)(void *key, void *value, void *data),
+        void *data);
 #endif
